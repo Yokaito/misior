@@ -1,3 +1,4 @@
+import '@/styles/fonts.css'
 import type { AppProps, AppType } from 'next/app'
 import { Analytics } from '@vercel/analytics/react'
 import { trpc } from '@/sdk/lib/trpc'

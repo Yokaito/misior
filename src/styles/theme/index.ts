@@ -9,7 +9,7 @@ const theme = {
   // fonts
   text: {
     family: {
-      primary: 'Roboto',
+      primary: 'Poppins',
     },
   },
 
