@@ -20,6 +20,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "migrate": "prisma migrate dev",
+    "prisma-reset": "prisma migrate reset",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
@@ -27,6 +29,7 @@
     "commit": "cz"
   },
   "dependencies": {
+    "@prisma/client": "4.13.0",
     "@tanstack/react-query": "^4.29.5",
     "@trpc/client": "10.21.3-alpha.3",
     "@trpc/next": "10.21.3-alpha.3",
@@ -70,6 +73,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "prisma": "^4.13.0"
   }
 }
