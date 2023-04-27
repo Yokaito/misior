@@ -1,5 +1,10 @@
 import Head from 'next/head'
 import { trpc } from '@/sdk/lib/trpc'
+import styled from 'styled-components'
+
+const MainStyled = styled.main`
+  color: red;
+`
 
 export default function Home() {
   const { data } = trpc.hello.greetings.useQuery()
@@ -12,7 +17,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>{data?.message}</main>
+      <MainStyled>{data?.message}</MainStyled>
     </>
   )
 }
