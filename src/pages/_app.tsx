@@ -1,8 +1,9 @@
 import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps, AppType } from 'next/app'
 import { Analytics } from '@vercel/analytics/react'
+import { trpc } from '@/sdk/lib/trpc'
 
-export default function App({ Component, pageProps }: AppProps) {
+export const MyApp: AppType<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Component {...pageProps} />
@@ -10,3 +11,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   )
 }
+
+export default trpc.withTRPC(MyApp)
