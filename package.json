@@ -43,8 +43,8 @@
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
-      "yarn lint --fix",
-      "yarn format"
+      "pnpm lint --fix",
+      "pnpm format"
     ]
   },
   "devDependencies": {
