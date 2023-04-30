@@ -1,7 +1,7 @@
-import InformationBar from '@/components/InformationBar'
 import * as S from './styles'
-import Box from '@/components/ui/Box'
+import InformationBar from '@/components/InformationBar'
 import Copyright from '@/components/Copyright'
+import NewstickerList from '@/components/Newsticker'
 
 type LayoutProps = {
   children: React.ReactNode
@@ -14,7 +14,7 @@ export const Layout = ({ children }: LayoutProps) => {
         <S.MenuLeftWrapper>MenuLeft</S.MenuLeftWrapper>
         <S.MainContentWrapper>
           <InformationBar />
-          <Box title="news ticker" />
+          <NewstickerList />
           <main id="main-content">{children}</main>
           <Copyright />
         </S.MainContentWrapper>
