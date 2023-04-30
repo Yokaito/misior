@@ -7,7 +7,7 @@ import IconDiscord from '@/assets/images/icons/discord.png'
 import IconDownload from '@/assets/images/icons/download.png'
 
 import Image from 'next/image'
-import { StreamersInfo } from '@/components/ui/StreamersInfo'
+import { StreamersInfo } from '@/components/StreamersInfo'
 
 export const InformationBar = () => {
   return (
