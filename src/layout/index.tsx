@@ -2,8 +2,8 @@ import * as S from './styles'
 import InformationBar from '@/components/InformationBar'
 import Copyright from '@/components/Copyright'
 import NewstickerList from '@/components/Newsticker'
-import LoginBox from '@/components/LoginBox'
-import { DownloadBox } from '@/components/DownloadBox'
+import LoginBox from '@/components/Sidebar/LoginBox'
+import { DownloadBox } from '@/components/Sidebar/DownloadBox'
 
 type LayoutProps = {
   children: React.ReactNode
