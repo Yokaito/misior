@@ -33,6 +33,9 @@ export const MainContentWrapper = styled.section`
 
 export const MenuLeftWrapper = styled.aside`
   grid-area: MNL;
+  display: flex;
+  flex-direction: column;
+  gap: ${({ theme }) => theme.spacings[4]};
 `
 
 export const MenuRightWrapper = styled.aside`
