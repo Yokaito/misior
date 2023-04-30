@@ -5,12 +5,15 @@ import { trpc } from '@/sdk/lib/trpc'
 import { ThemeProvider } from 'styled-components'
 import theme from '@/styles/theme'
 import GlobalStyle from '@/styles/global/createGlobalStyle'
+import Layout from '@/layout'
 
 export const MyApp: AppType<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
         <GlobalStyle />
       </ThemeProvider>
       <Analytics />

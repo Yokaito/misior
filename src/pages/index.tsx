@@ -1,10 +1,31 @@
 import Head from 'next/head'
 import { trpc } from '@/sdk/lib/trpc'
-import styled from 'styled-components'
+import Box from '@/components/ui/Box'
+import News from '@/components/News'
 
-const MainStyled = styled.main`
-  color: red;
-`
+const MockNews = [
+  {
+    icon: 'community' as 'community' | 'development' | 'support',
+    title: 'Community News',
+    date: new Date(),
+    author: 'Kamity',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec',
+  },
+  {
+    icon: 'support' as 'community' | 'development' | 'support',
+    title: 'Support News',
+    date: new Date(),
+    author: 'Kuriti',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec',
+  },
+  {
+    icon: 'development' as 'community' | 'development' | 'support',
+    title: 'Development News',
+    date: new Date(),
+    author: 'Yokaito',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec',
+  },
+]
 
 export default function Home() {
   const { data } = trpc.hello.greetings.useQuery()
@@ -17,7 +38,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MainStyled>{data?.message}</MainStyled>
+      <Box title="news" padding="medium">
+        <News news={MockNews} />
+      </Box>
     </>
   )
 }
