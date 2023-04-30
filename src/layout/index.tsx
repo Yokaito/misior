@@ -1,9 +1,10 @@
 import * as S from './styles'
-import InformationBar from '@/components/InformationBar'
-import Copyright from '@/components/Copyright'
-import NewstickerList from '@/components/Newsticker'
-import LoginBox from '@/components/Sidebar/LoginBox'
+import { InformationBar } from '@/components/InformationBar'
+import { Copyright } from '@/components/Copyright'
+import { NewstickerList } from '@/components/Newsticker'
+import { LoginBox } from '@/components/Sidebar/LoginBox'
 import { DownloadBox } from '@/components/Sidebar/DownloadBox'
+import { Menu } from '@/components/Sidebar/Menu'
 
 type LayoutProps = {
   children: React.ReactNode
@@ -16,6 +17,7 @@ export const Layout = ({ children }: LayoutProps) => {
         <S.MenuLeftWrapper>
           <LoginBox />
           <DownloadBox />
+          <Menu />
         </S.MenuLeftWrapper>
         <S.MainContentWrapper>
           <InformationBar />
