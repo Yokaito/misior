@@ -3,6 +3,7 @@ import type * as T from './types'
 
 import ButtonImage from '@/assets/images/buttons/button.png'
 import ButtonImageExtend from '@/assets/images/buttons/button-extend.png'
+import HeadButton from '@/assets/images/buttons/button_tibia_coins-2.png'
 
 export const ButtonWrapper = styled.button<T.ButtonStyleProps>`
   background-repeat: no-repeat;
@@ -40,4 +41,15 @@ export const ButtonText = styled.span`
     1px -1px 0 ${({ theme }) => theme.color.shadows.primary.default},
     -1px 1px 0 ${({ theme }) => theme.color.default.black},
     1px 1px 0 ${({ theme }) => theme.color.default.black};
+`
+
+export const ButtonAdornment = styled.span`
+  position: absolute;
+  background: ${`url(${HeadButton.src}) no-repeat center center`};
+  background-size: contain;
+  top: -16px;
+  right: -2px;
+  width: ${HeadButton.width}px;
+  height: ${HeadButton.height}px;
+  z-index: ${({ theme }) => theme.zIndex.top};
 `

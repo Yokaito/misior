@@ -40,4 +40,7 @@ export const MenuLeftWrapper = styled.aside`
 
 export const MenuRightWrapper = styled.aside`
   grid-area: MNR;
+  display: flex;
+  flex-direction: column;
+  gap: ${({ theme }) => theme.spacings[5]};
 `
