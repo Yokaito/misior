@@ -79,6 +79,12 @@ const theme = {
       black: '#000000',
       transparent: 'transparent',
     },
+    system: {
+      error: `#f44336`,
+      warning: `#ff9800`,
+      info: `#2196f3`,
+      success: `#4caf50`,
+    },
     background: {
       1: '#051122',
       2: '#debb9d',
