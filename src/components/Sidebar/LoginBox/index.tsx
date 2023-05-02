@@ -9,7 +9,7 @@ export const LoginBox = () => {
   return (
     <MenuBox showArtworkInTop>
       <S.LoginBoxWrapper>
-        <Button text="Login" extend onClick={() => push('/login')} />
+        <Button text="Login" extend onClick={() => push('/account/login')} />
         <S.LoginBoxTitle href="/account/create">Create Account</S.LoginBoxTitle>
       </S.LoginBoxWrapper>
     </MenuBox>

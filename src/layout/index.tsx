@@ -35,7 +35,7 @@ export const Layout = ({ children }: LayoutProps) => {
             href="/premium"
             buttonOptions={{
               hasButton: true,
-              buttonLabel: 'Compre Agora',
+              buttonLabel: 'Buy Now',
             }}
           />
           <ServiceBox headImage="Head8" boxImage="Box6" href="/server-info" />
